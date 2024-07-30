@@ -6,7 +6,7 @@ export default defineConfig({
   title: "Fs-ui",
   description: "一个仿照element-plus的练手组件库",
   outDir: "./dits",
-  base: "/fs-desgin-ui/", 
+  base: "/fs-desgin-ui/dits/", 
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
