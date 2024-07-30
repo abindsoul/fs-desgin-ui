@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button>点击起飞</button><br>
+        <fs-button text="はっきり見える、私の心の中はもう何もありません"></fs-button>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./index.iife.js"></script>
+    <script>
+        console.log(FsDesignUi);
+        Vue.createApp().use(FsDesignUi).mount('#app')
+    </script>
+</body>
+</html>

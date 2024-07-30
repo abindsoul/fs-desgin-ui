@@ -1,0 +1,19 @@
+{
+  "name": "@fs-design/build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fast-glob": "^3.3.2",
+    "ts-morph": "^23.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.1.0"
+  }
+}
