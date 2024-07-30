@@ -5,6 +5,7 @@ import  {alascom} from '../plugins/alascom'
 export default defineConfig({
   title: "Fs-ui",
   description: "一个仿照element-plus的练手组件库",
+  outDir: "./dits",
   base: "/fsui/", 
   lastUpdated: true,
   themeConfig: {
@@ -12,6 +13,9 @@ export default defineConfig({
     logo: {
       light: "https://raw.githubusercontent.com/abindsoul/blogPic/main/logo.png",
       dark: "https://raw.githubusercontent.com/abindsoul/blogPic/main/logo_hover.png",
+    },
+    search: {
+      provider: "local",
     },
     nav: [
       { text: 'Home', link: '/' },
@@ -31,6 +35,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   },
+  
   markdown:{
     config(md){
       // 注册插件
