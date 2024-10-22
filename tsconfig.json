@@ -1,5 +1,5 @@
 {
-  "include": ["internal/*","play/*"],
+  "include": ["internal","play/*",],
   "references": [
     {
       "path": "./tsconfig.web.json"

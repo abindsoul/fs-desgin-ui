@@ -1,0 +1,29 @@
+$namespace: 'fs' !default;
+$block-prefix: '-' !default;
+$element-prefix: '__' !default;
+$modifier-prefix: '--' !default;
+
+@mixin b($block) {
+  $B: $namespace + $block-prefix + $block;
+  .#{$B} {
+    @content;
+  }
+}
+
+@mixin e($element) {
+  $slector: &;
+  @at-root {
+    #{$slector + $element-prefix + $element} {
+      @content;
+    }
+  }
+}
+
+@mixin m($modifier) {
+  $slector: &;
+  @at-root {
+    #{$slector + $modifier-prefix + $modifier} {
+      @content;
+    }
+  }
+}

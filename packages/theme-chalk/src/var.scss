@@ -1,0 +1,29 @@
+$colors: (
+  primary: #409eff,
+  success: #67c23a,
+  warning: #e6a23c,
+  danger: #f56c6c,
+  info: #909399,
+);
+
+:root {
+  // 颜色
+  --fs-color-light: #ffffff;
+  --fs-color-dark: #000000;
+  // 圆角
+  --fs-border-radius-base: 4px;
+  --fs-border-radius-round: 20px;
+  --fs-border-radius-large: 6px;
+  // 边框
+  --fs-border-width: 1px;
+  --fs-border-color-default: #dcdfe6;
+
+  // 状态颜色
+  --fs-color-default: transparent;
+  @each $name, $color in $colors {
+    --fs-color-#{$name}: #{$color};
+    @for $i from 1 through 9 {
+      --fs-color-#{$name}-light-#{$i}: #{lighten($color, $i * 5%)};
+    }
+  }
+}
